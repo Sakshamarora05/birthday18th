@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday [Her Name]!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Landing Page -->
+        <section class="landing" id="landing">
+            <div class="landing-content">
+                <h1 class="title">Happy Birthday <span class="name">Mukti</span>!</h1>
+                <p class="subtitle">Wishing you an amazing day!</p>
+                <button class="cta-button" id="startButton">
+                    <span class="button-text">Click for your surprise!</span>
+                    <span class="button-sparkles"></span>
+                </button>
+            </div>
+            <div class="floating-elements">
+                <div class="balloon balloon1"></div>
+                <div class="balloon balloon2"></div>
+                <div class="balloon balloon3"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery -->
+        <section class="gallery hidden" id="gallery">
+            <h2>Your Special Day!</h2>
+            <div class="photo-grid">
+                <!-- Replace with her photos -->
+                <div class="photo-item" style="background-image: url('images/image1.jpg')">
+                    <div class="photo-caption">Gorgeous Girl!</div>
+                </div>
+                <div class="photo-item" style="background-image: url('images/image2.jpg')">
+                    <div class="photo-caption">So Pretty!</div>
+                </div>
+                <div class="photo-item" style="background-image: url('images/image3.jpg')">
+                    <div class="photo-caption">Lovely Smile!</div>
+                </div>
+                <div class="photo-item" style="background-image: url('images/image4.jpg')">
+                    <div class="photo-caption">Amazing Person!</div>
+                </div>
+            </div>
+            <button class="nav-button" id="toMessages">
+                <span>Next</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </section>
+
+        <!-- Compliment Messages -->
+        <section class="messages hidden" id="messages">
+            <h2>Why You're Awesome</h2>
+            <div class="message-container">
+                <div class="message-card active">
+                    <div class="message-bubble">
+                        <p>You have the most prettiest smile i have ever seen!</p>
+                    </div>
+                </div>
+                <div class="message-card">
+                    <div class="message-bubble">
+                        <p>You are really a lovely person who can easily make anyone's life brighter!</p>
+                    </div>
+                </div>
+                <div class="message-card">
+                    <div class="message-bubble">
+                        <p>You're one of the most amazing people I know!</p>
+                    </div>
+                </div>
+                <div class="message-card">
+                    <div class="message-bubble">
+                        <p> Thank you so much for coming in my life!</p>
+                    </div>
+                </div>
+                <div class="message-card">
+                    <div class="message-bubble">
+                        <p>You're the perfect one !</p>
+                    </div>
+                </div>
+            </div>
+            <div class="message-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <button class="nav-button" id="toFinal">
+                <span>Next</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </section>
+
+        <!-- Final Birthday Wishes -->
+        <section class="final hidden" id="final">
+            <div class="celebration-container">
+                <div class="cake">
+                    <div class="plate"></div>
+                    <div class="layer layer-bottom"></div>
+                    <div class="layer layer-middle"></div>
+                    <div class="layer layer-top"></div>
+                    <div class="icing"></div>
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+                </div>
+                <div class="sparkler"></div>
+            </div>
+            <h2 class="final-title">Make a Wish!</h2>
+            <p class="final-message">Wishing you a birthday filled with joy, laughter, and all your favorite things! May this year bring you happiness and success in everything you do!</p>
+            <button class="nav-button" id="restart">
+                <span>Start Over</span>
+                <i class="fas fa-redo"></i>
+            </button>
+            <div class="floating-emojis"></div>
+        </section>
+    </div>
+
+    <audio id="birthdayMusic" loop>
+        <source src="happy-birthday-254480.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
